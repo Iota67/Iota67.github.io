@@ -1,0 +1,50 @@
+
+@font-face{
+    font-family: AudioWide;
+    src: url(./Fonts/Audiowide-Regular.ttf)
+}
+
+@font-face{
+    font-family: Pixelify;
+    src: url(./Fonts/PixelifySans-Regular.ttf)
+
+}
+
+html{
+    background-image:url(./img/Background.jpg);
+    background-size: 150%;
+    
+}
+
+body{
+    text-align: center;
+    margin-left: 30px;  
+    margin-right: 30px;  
+    font-family: Pixelify;
+    font-size: 20px;
+}
+
+
+
+h1{
+    font-family: AudioWide;
+}
+
+.Explications{
+    display: flex;
+}
+
+h2{
+    font-family: AudioWide;
+}
+
+a{
+    text-decoration: none;
+    color: rgb(13, 56, 112);
+}
+
+    
+footer{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
