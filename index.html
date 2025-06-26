@@ -1,44 +1,36 @@
-
-
 <!DOCTYPE html>
 <html lang="fr">
-
 <head>
-    <meta charset="UTF-8"/>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Portfolio de Timothée</title>
-    <link rel="stylesheet" href="style.css" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Apprendre les APIs avec Yu-gi-oh !</title>
+    <link rel="stylesheet" href="style.css">
 </head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>Yu-gi-oh !</h1>
+        </div>
 
-
-
-    <body>
-        <header>
-            <h1>Yu-gi-oh</h1>
-            <h2>Jeu de carte à jouer, manga et anime</h2>
-        </header>
-
-
-
-            <div id="explications">
-                
-                <p id="création"> Yu-gi-oh est originellement un manga créé par le japonais Kazuki Takahashi en 1996 dans lequel les personnages combattent lors de duels de cartes Yu-gi-oh.</p> 
-                <img id="Yu-gi-oh" src="./img/Yu-gi-oh.jpg" alt="Yu-gi-oh" />
-                <div id="container">
-                    <p id="histoire">Le succès a été tel que le jeu à été reproduit dans la vrai vie.
-                    Le but est simple: réduire les points de vie de son adversaire à 0. 
-                    Pour cela, il faudra vous aider des trois types de cartes du jeu: les monstres, les pièges et les cartes magie afin de remporter chacun de vos duels.
-                    Pour ceux qui veulent apprendre à jouer:</p>
-                        <a target="_blank" href="https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://www.yugioh-card.com/eu/wp-content/uploads/2022/07/Rulebook_v9_fr.pdf&ved=2ahUKEwjkgKvj2_WNAxV5UqQEHRm3OZgQFnoECB4QAQ&usg=AOvVaw0k2TqXFqk588WkhsKH_w5H">
-                            <h3>Règles</h3>
-                        </a>
-                </div> 
+        <div class="content">
+            <div class="search-section">
+                <h2>Rechercher une carte</h2>
+                <div class="search-container">
+                    <input 
+                        type="text" 
+                        id="pokemonInput" 
+                        placeholder="Tapez le nom d'une carte (ex: Dark Magician, Blue-Eyes White Dragon...)"
+                        onkeypress="handleKeyPress(event)"
+                    >
+                    <button class="btn" onclick="searchPokemon()" id="searchBtn">
+                        Rechercher
+                    </button>
+                </div>
             </div>
-        <footer>
-            <p>&copy; 2025 - Timothée. Site créé pendant l'atelier SUPINFO.</p>
-        </footer>
-    </body>
+            <div id="result"></div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
 </html>
-
-
-
