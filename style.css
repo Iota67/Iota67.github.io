@@ -47,9 +47,9 @@ header h2{
 }
 
 #explications{
-    margin: 10px 50px;
+    margin: 15px 70px;
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     
     
   
@@ -59,21 +59,25 @@ header h2{
    
   width: auto;
   height: 415px;
+  margin: 0 30px;
   
    
 }
 
 #création{
-    background-color: #934444;
+    background-color: #934444; 
     width: 300px;
     color: #FDE613;
+    margin: 0;
 }
 
-#histoire{
+#container{
     background-color: #934444;
     width: 300px;
     color: #FDE613;
+    margin: 0;
 }
+
 
 a{
     text-decoration: none;
@@ -82,9 +86,6 @@ a{
 
     
 footer p{
-    font-family: Arial, Helvetica, sans-serif;
-    align-self: flex-end;
-    margin: 0;
-    
+    font-family: Arial, Helvetica, sans-serif;  
 }
 
